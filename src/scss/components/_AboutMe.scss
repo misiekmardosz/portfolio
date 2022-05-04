@@ -1,0 +1,40 @@
+.about-me{
+  margin-top: $section-margin;
+  .about-me-content{
+    font-family: $main-font-family;
+    //padding: 0 100px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: left;
+    font-weight: light;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      background: $main-color;
+      width: 700px;
+      height: 290px;
+      top: 190px;
+      right: 150px;
+    }
+    .about-me-text{
+      font-size: 18px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      //padding:0 40px;
+      width: 500px;
+      height: 100%;
+    }
+    img{
+      position: relative;
+      z-index: 2;
+      //padding: 40px;
+      width: 300px;
+      height: fit-content;
+    }
+  }
+}

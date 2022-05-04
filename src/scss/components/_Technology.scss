@@ -1,0 +1,22 @@
+.technology{
+  margin-top: $section-margin;
+  display: flex;
+  justify-content: left;
+  flex-flow: wrap;
+  h2{
+    text-align: right;
+    //padding: 0 40px;
+    //border-bottom: 4px solid $main-text-color;
+  }
+  .brands{
+    background: $main-color;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    .brand_logo{
+      padding: 50px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

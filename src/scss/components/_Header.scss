@@ -1,0 +1,17 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  font-family: $main-font-family;
+  color: $main-text-color;
+  font-size: 30px;
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -20px;
+    .nav__link{
+      font-size: $third-font-size;
+      padding: 0 20px;
+    }
+  }
+}
