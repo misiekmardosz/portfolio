@@ -1,0 +1,54 @@
+
+.header__projects{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: calc(50% - 550px);
+  display: flex;
+  justify-content: space-between;
+  font-family: $main-font-family;
+  color: $main-text-color;
+  font-size: 20px;
+  border-bottom: 2px solid $main-color;
+  .title__name__projects{
+    font-weight: bold;
+    margin: 25px 0;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: $main-font-family;
+    color: $main-text-color;
+  }
+  .nav__projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -20px;
+    .nav__link__projects{
+      position: relative;
+      padding: 0 20px;
+      transition: all .1s ease-in-out;
+      font-size: 20px;
+      text-decoration: none;
+      font-family: $main-font-family;
+      color: $main-text-color;
+      animation: scale2 1s linear infinite;
+      animation-play-state: paused;
+      animation-delay: calc(var(--scroll) * -5s);
+      animation-iteration-count: 1;
+      animation-fill-mode: both;
+    }
+    .nav__link__projects:hover{
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+}
+@keyframes scale1 {
+  to {
+    background: white;
+    //opacity: 0.5;
+    border-bottom: 2px solid $main-color;
+    font-size: 10px;
+  }
+}

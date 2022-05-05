@@ -1,16 +1,15 @@
 import React from "react"
 import {Link} from "react-router-dom";
+import {HashLink} from 'react-router-hash-link';
 
-window.addEventListener('scroll', () => {
-    document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
 
 const ProjectsHeader = () => {
   return(
-      <div className={"header container"}>
-          <h2>MICHAŁ MARDOSZ</h2>
-        <nav className="nav">
-            <Link to={"/"} className="nav__link__home">HOME</Link>
+      <div className={"header__projects container"}>
+          <Link to={"/"} className="title__name__projects">MICHAŁ MARDOSZ</Link>
+          <HashLink to={"/"} className="title__name__projects">Section three</HashLink>
+        <nav className="nav__projects">
+            <Link to={"/"} className="nav__link__projects">HOME</Link>
         </nav>
       </div>
   )

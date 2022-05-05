@@ -1,62 +1,90 @@
-
+@import "../global/generic";
 .header{
   position: fixed;
   z-index: 10;
   width: 100%;
   top: 0;
-  left: calc(50% - 550px);
-  display: flex;
-  justify-content: space-between;
   font-family: $main-font-family;
   color: $main-text-color;
   font-size: 20px;
-  animation: scale1 1s linear infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -15s);
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  .nav{
+  .header__container{
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 -20px;
-    .nav__link{
-      position: relative;
-
-      //font-size: $third-font-size;
-      padding: 0 20px;
-      transition: all .1s ease-in-out;
-      animation: scale2 1s linear infinite;
-      animation-play-state: paused;
-      animation-delay: calc(var(--scroll) * -5s);
-      animation-iteration-count: 1;
-      animation-fill-mode: both;
-    }
-    .nav__link__home{
-      font-size: 20px;
+    justify-content: space-between;
+    animation: scale1 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -15s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    .title__name__projects{
+      font-weight: bold;
+      margin: 25px;
+      font-size: 30px;
       text-decoration: none;
+      font-family: $main-font-family;
       color: $main-text-color;
     }
-    .nav__link:first-child{
-      font-size: 0px;
-      font-weight: 800;
-      animation: scale3 1s linear infinite;
-      animation-play-state: paused;
-      animation-delay: calc(var(--scroll) * -20s);
-      animation-iteration-count: 1;
-      animation-fill-mode: both;
+    .nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 -20px;
+      .nav__link{
+        position: relative;
+        //font-size: $third-font-size;
+        padding: 0 20px;
+        transition: all .1s ease-in-out;
+        animation: scale2 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -5s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+      }
+      .nav__link__home{
+        font-size: 20px;
+        text-decoration: none;
+        font-family: $main-font-family;
+        color: $main-text-color;
+      }
+      .nav__link:first-child{
+        font-size: 0px;
+        font-weight: 800;
+        animation: scale3 1s linear infinite;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -20s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
 
+      }
+      .nav__link:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+      }
     }
-    .nav__link:hover{
-      cursor: pointer;
-      transform: scale(1.2);
+  }
+
+  @media (max-width: $breakpoint-phone){
+    .nav{
+      display: none;
+    }
+  }
+}
+@media (max-width: $breakpoint-phone){
+  .header{
+    width: 100%;
+    left: 0;
+  }
+}
+@media (max-width: $breakpoint-laptop){
+  .header{
+    width: 100%;
+    .header__container{
     }
   }
 }
 @keyframes scale1 {
   to {
     background: white;
-    //opacity: 0.5;
     border-bottom: 2px solid $main-color;
     font-size: 10px;
   }
