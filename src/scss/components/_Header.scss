@@ -1,17 +1,65 @@
+
 .header{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: calc(50% - 550px);
   display: flex;
   justify-content: space-between;
   font-family: $main-font-family;
   color: $main-text-color;
-  font-size: 30px;
+  font-size: 20px;
+  animation: scale1 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -15s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
   .nav{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 -20px;
     .nav__link{
-      font-size: $third-font-size;
+      position: relative;
+      //font-size: $third-font-size;
       padding: 0 20px;
+      transition: all .1s ease-in-out;
+      animation: scale2 1s linear infinite;
+      animation-play-state: paused;
+      animation-delay: calc(var(--scroll) * -5s);
+      animation-iteration-count: 1;
+      animation-fill-mode: both;
     }
+    .nav__link:first-child{
+      font-size: 0px;
+      animation: scale3 1s linear infinite;
+      animation-play-state: paused;
+      animation-delay: calc(var(--scroll) * -20s);
+      animation-iteration-count: 1;
+      animation-fill-mode: both;
+    }
+    .nav__link:hover{
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+}
+@keyframes scale1 {
+  to {
+    background: white;
+    //opacity: 0.5;
+    border-bottom: 2px solid $main-color;
+    font-size: 10px;
+  }
+}
+@keyframes scale2 {
+  to {
+    font-size: 10px;
+  }
+}
+@keyframes scale3 {
+  to{
+    font-size: 10px;
   }
 }
