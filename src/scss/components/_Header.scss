@@ -1,5 +1,6 @@
 @import "../global/generic";
 .header{
+  display: flex;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -77,8 +78,12 @@
 }
 @media (max-width: $breakpoint-laptop){
   .header{
-    width: 100%;
+    border-bottom: 2px solid $main-color;
+    background: white;
     .header__container{
+      animation: none;
+      border: none;
+      margin:0 50px;
     }
   }
 }
