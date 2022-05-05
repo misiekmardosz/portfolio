@@ -33,11 +33,13 @@
     }
     .nav__link:first-child{
       font-size: 0px;
+      font-weight: 800;
       animation: scale3 1s linear infinite;
       animation-play-state: paused;
       animation-delay: calc(var(--scroll) * -20s);
       animation-iteration-count: 1;
       animation-fill-mode: both;
+
     }
     .nav__link:hover{
       cursor: pointer;

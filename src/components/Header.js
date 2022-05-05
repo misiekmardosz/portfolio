@@ -13,7 +13,7 @@ const Header = () => {
             <Scroll to={"home"} className="nav__link"
                     spy={true}
                     smooth={true}
-                    offset={-90}
+                    offset={-185}
                     duration={500}>Home</Scroll>
           <Scroll to={"AboutMe"} className="nav__link"
                   spy={true}

@@ -6,6 +6,7 @@
     flex-flow: wrap;
     .projects__item{
       //border-radius: 20px;
+      box-shadow: 0px 0px 15px -5px $side-text-color;
       margin: 20px;
       display: flex;
       justify-content: center;
