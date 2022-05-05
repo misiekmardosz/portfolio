@@ -127,19 +127,24 @@ const Contact = () => {
               SENT
             </button>
           </form>
-          <div className={"informations"}>
+          <div className={"contact__options"}>
             <h3>michal.mardosz@gmail.com</h3>
             <div className="social__logos">
-              <a href="https://www.messenger.com/t/100000079468151">
-                {" "}
-                <img
-                  className="brand_logo"
-                  src={messenger_logo}
-                  alt="messenger_logo"
-                />
+              <a
+                href="https://www.messenger.com/t/100000079468151"
+                className="brand__logo"
+              >
+                <img src={messenger_logo} alt="messenger_logo" />
               </a>
-              <img className="brand_logo" src={linkedin_logo} alt="css_logo" />
-              <img className="brand_logo" src={github_logo} alt="css_logo" />
+              <a href="https://github.com/misiekmardosz">
+                <img src={github_logo} alt="css_logo" className="brand__logo" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/micha%C5%82-mardosz-298892228/"
+                className="brand__logo"
+              >
+                <img src={linkedin_logo} alt="css_logo" />
+              </a>
             </div>
           </div>
         </div>
