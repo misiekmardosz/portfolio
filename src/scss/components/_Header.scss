@@ -1,5 +1,6 @@
 @import "../global/generic";
-.header{
+
+.header {
   display: flex;
   position: fixed;
   z-index: 10;
@@ -8,7 +9,8 @@
   font-family: $main-font-family;
   color: $main-text-color;
   font-size: 20px;
-  .header__container{
+
+  .header__container {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -17,7 +19,9 @@
     animation-delay: calc(var(--scroll) * -15s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
-    .title__name__projects{
+    border-bottom: 2px solid $main-color;
+
+    .title__name__projects {
       font-weight: bold;
       margin: 25px;
       font-size: 30px;
@@ -25,12 +29,14 @@
       font-family: $main-font-family;
       color: $main-text-color;
     }
-    .nav{
+
+    .nav {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0 -20px;
-      .nav__link{
+
+      .nav__link {
         position: relative;
         //font-size: $third-font-size;
         padding: 0 20px;
@@ -41,13 +47,15 @@
         animation-iteration-count: 1;
         animation-fill-mode: both;
       }
-      .nav__link__home{
+
+      .nav__link__home {
         font-size: 20px;
         text-decoration: none;
         font-family: $main-font-family;
         color: $main-text-color;
       }
-      .nav__link:first-child{
+
+      .nav__link:first-child {
         font-size: 0px;
         font-weight: 800;
         animation: scale3 1s linear infinite;
@@ -57,50 +65,56 @@
         animation-fill-mode: both;
 
       }
-      .nav__link:hover{
+
+      .nav__link:hover {
         cursor: pointer;
         transform: scale(1.2);
       }
     }
   }
 
-  @media (max-width: $breakpoint-phone){
-    .nav{
+  @media (max-width: $breakpoint-phone) {
+    .nav {
       display: none;
     }
   }
 }
-@media (max-width: $breakpoint-phone){
-  .header{
+
+@media (max-width: $breakpoint-phone) {
+  .header {
     width: 100%;
     left: 0;
   }
 }
-@media (max-width: $breakpoint-laptop){
-  .header{
+
+@media (max-width: $breakpoint-laptop) {
+  .header {
     border-bottom: 2px solid $main-color;
     background: white;
-    .header__container{
+
+    .header__container {
       animation: none;
       border: none;
-      margin:0 50px;
+      margin: 0 50px;
     }
   }
 }
+
 @keyframes scale1 {
   to {
     background: white;
-    border-bottom: 2px solid $main-color;
     font-size: 10px;
   }
 }
+
 @keyframes scale2 {
   to {
     font-size: 10px;
   }
 }
+
 @keyframes scale3 {
-  to{
+  to {
     font-size: 10px;
   }
 }

@@ -7,15 +7,15 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 
 const Home = () => {
-  return(
-      <>
-          <Header/>
-          <Main/>
-          <AboutMe/>
-          <Technology/>
-          <Portfolio/>
-          <Contact/>
-      </>
-  )
-}
-export default Home
+  return (
+    <>
+      <Header />
+      <Main />
+      <AboutMe />
+      <Technology />
+      <Portfolio />
+      <Contact />
+    </>
+  );
+};
+export default Home;

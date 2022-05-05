@@ -1,4 +1,38 @@
-.contact{
-  background: url("../../../public/SecondaryPhoto.jpeg") left/contain no-repeat;
-  height: 800px;
+.contact {
+  margin: 50px 0;
+  height: 500px;
+  font-size: 20px;
+
+  .form__container {
+    height: 100%;
+
+    .form__box {
+      display: flex;
+      justify-content: center;
+      background: $main-color;
+
+      .form {
+        padding: 70px 0;
+
+        .inputs {
+          display: flex;
+          width: 100%;
+        }
+      }
+
+      .form__input {
+        font-family: $main-font-family;
+        font-size: 20px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $main-text-color;
+        width: 100%;
+      }
+
+      textarea {
+        background: none;
+        border: 1px solid $main-text-color;
+      }
+    }
+  }
 }
