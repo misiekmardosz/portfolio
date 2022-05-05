@@ -3,7 +3,7 @@ import './App.css';
 import "./scss/main.scss"
 import Home from "./components/Home";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import DrinksCalculator from "./components/DrinksCalculator";
+import DrinksCalculator from "./components/projects/DrinksCalculator";
 
 function App() {
   return (
@@ -11,10 +11,8 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route exact path="/" element={<Home/>}/>
-                <Route path="/DrinksCalculator" element={<DrinksCalculator/>}/>
-                {/*<Route path="/logowanie" element={<Login/>}/>*/}
-                {/*<Route path="/rejestracja" element={<Register/>}/>*/}
-                {/*<Route path="/wylogowano" element={<Logout/>}/>*/}
+                <Route path="/Drinks_Calculator" element={<DrinksCalculator/>}/>
+
             </Routes>
         </BrowserRouter>
     </div>

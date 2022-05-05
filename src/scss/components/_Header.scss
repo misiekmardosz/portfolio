@@ -22,6 +22,7 @@
     margin: 0 -20px;
     .nav__link{
       position: relative;
+
       //font-size: $third-font-size;
       padding: 0 20px;
       transition: all .1s ease-in-out;
@@ -30,6 +31,11 @@
       animation-delay: calc(var(--scroll) * -5s);
       animation-iteration-count: 1;
       animation-fill-mode: both;
+    }
+    .nav__link__home{
+      font-size: 20px;
+      text-decoration: none;
+      color: $main-text-color;
     }
     .nav__link:first-child{
       font-size: 0px;
