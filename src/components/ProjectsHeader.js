@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProjectsHeader = ({ currentProject }) => {
+const ProjectsHeader = () => {
   return (
     <div className={"header__projects container"}>
       <Link to={"/"} className="title__name__projects">
-        {currentProject}
+        MICHAŁ MARDOSZ
       </Link>
       <nav className="nav__projects">
         <Link to={"/"} className="nav__link__projects">
