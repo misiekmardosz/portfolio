@@ -1,6 +1,7 @@
 @import "../global/generic";
 
 .header {
+  box-sizing: border-box;
   display: flex;
   position: fixed;
   z-index: 10;
@@ -56,7 +57,7 @@
       }
 
       .nav__link:first-child {
-        font-size: 0px;
+        font-size: 0;
         font-weight: 800;
         animation: scale3 1s linear infinite;
         animation-play-state: paused;
@@ -93,10 +94,19 @@
     background: white;
 
     .header__container {
-      animation: none;
-      border: none;
+      border-bottom: none !important;
+      //animation: none;
       margin: 0 50px;
     }
   }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .header {
+    .nav__link:not(:first-child) {
+      display: none !important;
+    }
+  }
+
 }
 

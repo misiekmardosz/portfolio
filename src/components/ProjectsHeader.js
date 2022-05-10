@@ -1,16 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 
-const ProjectsHeader = () => {
+const ProjectsHeader = ({ currentProject }) => {
   return (
     <div className={"header__projects container"}>
       <Link to={"/"} className="title__name__projects">
-        MICHAŁ MARDOSZ
+        {currentProject}
       </Link>
-      <HashLink to={"/"} className="title__name__projects">
-        Section three
-      </HashLink>
       <nav className="nav__projects">
         <Link to={"/"} className="nav__link__projects">
           HOME

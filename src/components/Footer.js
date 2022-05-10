@@ -3,7 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__container container"></div>
+      <h4 className="footer__container container">
+        2020 © all rights reserved
+      </h4>
     </footer>
   );
 };

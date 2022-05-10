@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
+  const [currentProject, setCurrentProject] = useState("");
+  console.log(currentProject);
   return (
     <section id="Portfolio" title="Portfolio" className="portfolio container">
       <h2 className="section__title">Portfolio</h2>

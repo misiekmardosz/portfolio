@@ -15,6 +15,7 @@ const Contact = () => {
   const [focusedSurname, setFocusedSurname] = useState(false);
   const [focusedMessage, setFocusedMessage] = useState(false);
   const [goodValidation, setGoodValidation] = useState("");
+
   const onFocusName = () => setFocusedName(true);
   const onBlurName = () => setFocusedName(false);
   const onFocusSurname = () => setFocusedSurname(true);
@@ -23,10 +24,8 @@ const Contact = () => {
   const onBlurMail = () => setFocusedMail(false);
   const onFocusMessage = () => setFocusedMessage(true);
   const onBlurMessage = () => setFocusedMessage(false);
-  console.log(focusedSurname);
 
   const mailForm = useRef();
-  console.log(mailForm);
   const sendEmail = (e) => {
     e.preventDefault();
     if (

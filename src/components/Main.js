@@ -6,7 +6,7 @@ const Main = () => {
       <div className="title__container">
         <h1 className="title">FRONT END DEVELOPER</h1>
       </div>
-      <div className="graphic"></div>
+      {/*<div className="graphic"></div>*/}
     </section>
   );
 };

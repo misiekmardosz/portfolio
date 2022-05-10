@@ -32,3 +32,11 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-tablet) {
+  .title__container {
+    font-size: 4vw;
+    text-align: center;
+    padding: 0;
+  }
+}

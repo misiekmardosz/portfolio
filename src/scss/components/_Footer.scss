@@ -1,5 +1,12 @@
 .footer {
-  
+  padding-top: 25px;
+  padding-bottom: 15px;
+  color: #a5a5a5;
+  width: 100%;
+
   .footer__container {
+    text-align: center;
+    font-family: $main-font-family;
+    font-weight: 300;
   }
 }

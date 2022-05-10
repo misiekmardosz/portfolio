@@ -16,6 +16,9 @@
       width: 2.5*160px;
       height: 2.5*90px;
       transition: all .1s ease-in-out;
+      @media (max-width: $breakpoint-phone) {
+
+      }
 
       .projects__item__content {
         width: 100%;
@@ -27,10 +30,23 @@
 
         .project__title {
           display: none;
+          padding-top: calc(50% - $third-font-size);
           font-weight: normal;
+          text-align: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
           text-decoration: none;
           color: $side-text-color;
           font-size: $third-font-size;
+          text-shadow: -0.5px -0.5px 0px white,
+          0px -0.5px 0px white,
+          0.5px -0.5px 0px white,
+          -0.5px 0px 0px white,
+          0.5px 0px 0px white,
+          -0.5px 0.5px 0px white,
+          0px 0.5px 0px white,
+          0.5px 0.5px 0px white;
         }
       }
     }

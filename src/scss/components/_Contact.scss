@@ -1,6 +1,5 @@
 .contact {
-  margin: 50px 0;
-  height: 500px;
+  margin-top: 50px;
   font-size: 20px;
 
   .form__container {
@@ -14,11 +13,19 @@
       display: flex;
       justify-content: space-around;
       background: $main-color;
+      @media (max-width: $breakpoint-tablet) {
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 0 50px;
+        .inputs {
+        }
+      }
 
 
       .form {
         .input {
           position: relative;
+          width: 100%;
         }
 
         .inputs {
@@ -46,6 +53,9 @@
         //box-shadow: ;
         width: 100%;
         padding-left: 10px;
+        @media (max-width: $breakpoint-phone) {
+          font-size: 15px;
+        }
       }
 
       input:-webkit-autofill:active {
@@ -66,6 +76,7 @@
           background: none;
           position: relative;
           //margin: 20px;
+          font-size: 15px;
           width: 100%;
           border: 1px solid $main-text-color;
           height: 150px;
@@ -85,9 +96,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media (max-width: $breakpoint-phone) {
+          font-size: 15px;
+        }
 
         .social__logos {
           display: flex;
+          justify-content: center;
 
           .brand__logo {
             padding: 20px;
@@ -95,6 +110,9 @@
             width: 100px;
             height: 100px;
             transition: .1s;
+            @media (max-width: $breakpoint-phone) {
+              margin: 0 -20px;
+            }
           }
 
           .brand__logo:hover {

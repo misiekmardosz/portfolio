@@ -2,6 +2,7 @@
   margin-top: $section-margin;
 
   .about__me__content {
+    border: 2px solid $main-color;
     font-family: $main-font-family;
     padding: 50px 0;
     justify-content: space-between;
@@ -11,15 +12,15 @@
     font-weight: light;
     position: relative;
 
-    &::before {
-      position: absolute;
-      content: '';
-      background: $main-color;
-      width: 700px;
-      height: 290px;
-      top: 190px;
-      right: 150px;
-    }
+    //&::before {
+    //  position: absolute;
+    //  content: '';
+    //  background: $main-color;
+    //  width: 700px;
+    //  height: 290px;
+    //  top: 190px;
+    //  right: 150px;
+    //}
 
     .about__me__text {
       font-size: 18px;
@@ -40,6 +41,12 @@
       padding: 40px;
       width: 300px;
       //height: fit-content;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      img {
+        display: none;
+      }
     }
   }
 }

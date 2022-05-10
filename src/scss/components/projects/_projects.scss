@@ -1,0 +1,19 @@
+.project__content {
+  width: 100%;
+
+  .project__description {
+    display: flex;
+  }
+
+  .project__photos {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+
+    .project__img {
+      box-sizing: border-box;
+      width: 25%;
+      padding: 20px;
+    }
+  }
+}
