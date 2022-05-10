@@ -129,7 +129,7 @@ const Contact = () => {
               />
               <ValidMessage message={message} focusedMessage={focusedMessage} />
             </div>
-            <button className={"send__button"}>SENT</button>
+            <button className={"send__button"}>SEND</button>
           </form>
           <div className={"contact__options"}>
             <h3>michal.mardosz@gmail.com</h3>
