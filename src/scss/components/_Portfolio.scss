@@ -1,10 +1,12 @@
-.portfolio{
+.portfolio {
   margin-top: $section-margin;
-  .projects{
+
+  .projects {
     display: flex;
     justify-content: center;
     flex-flow: wrap;
-    .projects__item{
+
+    .projects__item {
       //border-radius: 20px;
       box-shadow: 0px 0px 15px -5px $side-text-color;
       margin: 20px;
@@ -14,14 +16,16 @@
       width: 2.5*160px;
       height: 2.5*90px;
       transition: all .1s ease-in-out;
-      .projects__item__content{
+
+      .projects__item__content {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: backdrop-filter .1s ease-in-out;
-        .project__title{
+
+        .project__title {
           display: none;
           font-weight: normal;
           text-decoration: none;
@@ -30,25 +34,34 @@
         }
       }
     }
-    .projects__item:hover{
+
+    .projects__item:hover {
       transform: scale(1.1);
-      .projects__item__content{
+
+      .projects__item__content {
         backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 30px -1px $side-text-color;
+
       }
-      .project__title{
+
+      .project__title {
         display: block;
       }
     }
-    .projects__item:nth-of-type(1){
+
+    .projects__item:nth-of-type(1) {
       background: url("../../logos/DrinksCalc.png") center/cover;
     }
-    .projects__item:nth-of-type(2){
+
+    .projects__item:nth-of-type(2) {
       background: url("../../logos/BestShop.png") center/cover;
     }
-    .projects__item:nth-of-type(3){
+
+    .projects__item:nth-of-type(3) {
       background: url("../../logos/Game.png") center/cover;
     }
-    .projects__item:nth-of-type(4){
+
+    .projects__item:nth-of-type(4) {
       background: url("../../logos/CarSharing.png") center/cover;
     }
   }

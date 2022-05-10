@@ -7,6 +7,9 @@
     height: 100%;
 
     .form__box {
+      text-align: right;
+      font-weight: 300;
+      width: 100%;
       padding: 100px 0;
       display: flex;
       justify-content: space-around;
@@ -14,29 +17,71 @@
 
 
       .form {
-        padding: 70px 0;
+        .input {
+          position: relative;
+        }
 
         .inputs {
+          position: relative;
           display: flex;
-          width: 100%;
+          //width: 100%;
+        }
+
+        .input:first-child {
+          padding-right: 10px;
         }
       }
 
       .form__input {
+        font-weight: 300;
+        box-sizing: border-box;
         font-family: $main-font-family;
-        font-size: 20px;
+        background: $main-color !important;
+        font-size: 20px;;
         background: none;
+        margin-top: 40px;
         border: none;
         border-bottom: 1px solid $main-text-color;
+        -webkit-box-shadow: 0 0 0px 1000px $main-color inset;
+        //box-shadow: ;
         width: 100%;
+        padding-left: 10px;
       }
 
-      textarea {
-        background: none;
-        border: 1px solid $main-text-color;
+      input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0px 1000px $main-color inset;
+      }
+
+      .form__input:focus {
+        outline: none;
+        -webkit-box-shadow: 0 0 0px 1000px $main-color inset;
+      }
+
+      .textarea__box {
+        margin-top: 40px;
+        position: relative;
+
+        .textarea {
+          box-sizing: border-box;
+          background: none;
+          position: relative;
+          //margin: 20px;
+          width: 100%;
+          border: 1px solid $main-text-color;
+          height: 150px;
+          font-family: $main-font-family;
+          padding: 10px;
+          color: black;
+          resize: none;
+        }
+
+        textarea:focus {
+          outline: none;
+        }
       }
 
       .contact__options {
+        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -45,13 +90,37 @@
           display: flex;
 
           .brand__logo {
+            padding: 20px;
             display: flex;
             width: 100px;
             height: 100px;
+            transition: .1s;
+          }
+
+          .brand__logo:hover {
+            transform: scale(1.2);
           }
         }
 
       }
     }
   }
+}
+
+.input__valid {
+  font-family: $main-font-family;
+  font-weight: 300;
+  color: red;
+  position: absolute;
+  margin: 0;
+  font-size: 16px;
+  bottom: -20px;
+  padding-left: 10px;
+}
+
+.send__button {
+  background: none;
+  border: 1px solid $main-text-color;
+  padding: 10px 20px;
+  margin-top: 20px;
 }

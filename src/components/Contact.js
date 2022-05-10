@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import linkedin_logo from "../logos/linkedin-brands.svg";
 import messenger_logo from "../logos/facebook-messenger-brands.svg";
 import github_logo from "../logos/git-alt-brands.svg";
-
 import { ValidMail, ValidMessage, ValidName, ValidSurname } from "./Validation";
 
 const Contact = () => {
@@ -17,43 +17,46 @@ const Contact = () => {
   const [goodValidation, setGoodValidation] = useState("");
   const onFocusName = () => setFocusedName(true);
   const onBlurName = () => setFocusedName(false);
-  const onFocusSurname = () => setFocusedName(true);
-  const onBlurSurname = () => setFocusedName(false);
+  const onFocusSurname = () => setFocusedSurname(true);
+  const onBlurSurname = () => setFocusedSurname(false);
   const onFocusMail = () => setFocusedMail(true);
   const onBlurMail = () => setFocusedMail(false);
   const onFocusMessage = () => setFocusedMessage(true);
   const onBlurMessage = () => setFocusedMessage(false);
+  console.log(focusedSurname);
 
-  let handleSubmit = async (e) => {
+  const mailForm = useRef();
+  console.log(mailForm);
+  const sendEmail = (e) => {
     e.preventDefault();
-    try {
-      let res = await fetch(
-        "https://fer-api.coderslab.pl/v1/portfolio/contact",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
+    if (
+      email.match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      ) &&
+      name.match(/^[A-Za-z]+$/) &&
+      surname.match(/^[A-Za-z]+$/) &&
+      message.length < 100
+    ) {
+      emailjs
+        .sendForm(
+          "service_lq4spgu",
+          "template_jjer22l",
+          mailForm.current,
+          "IrYxnXdasMOkhGsJT"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
           },
-          body: JSON.stringify({
-            name: name,
-            email: email,
-            message: message,
-          }),
-        }
-      );
-      let resJson = await res.json();
-      if (res.status === 200) {
-        setName("");
-        setSurname("");
-        setEmail("");
-        setMessage("");
-        setGoodValidation("SEND!");
-      } else {
-      }
-    } catch (err) {
-      console.log(err);
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
+      setGoodValidation("send!");
     }
   };
+  console.log(name);
 
   return (
     <section id="Contact" title="Contact" className="contact">
@@ -61,13 +64,14 @@ const Contact = () => {
         <h2 className={"section__title"}>Contact</h2>
         <div className={"form__box"}>
           {/*<ValidationGood goodValidation={goodValidation} />*/}
-          <form className={"form"} onSubmit={handleSubmit}>
+          <form ref={mailForm} className={"form"} onSubmit={sendEmail}>
             <div className={"inputs"}>
               <div className={"input"}>
                 {/*<input className={"form--input"} placeholder={"Krzysztof"}/>*/}
                 <input
                   type="text"
                   value={name}
+                  name={"form_name"}
                   onBlur={onBlurName}
                   onFocus={onFocusName}
                   className={"form__input"}
@@ -81,11 +85,12 @@ const Contact = () => {
                 <input
                   type="text"
                   value={surname}
+                  name={"form_surname"}
                   onBlur={onBlurSurname}
                   onFocus={onFocusSurname}
                   className={"form__input"}
                   placeholder="surname"
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => setSurname(e.target.value)}
                 />
                 <ValidSurname
                   surname={surname}
@@ -98,6 +103,7 @@ const Contact = () => {
               <input
                 type="text"
                 value={email}
+                name={"form_email"}
                 onBlur={onBlurMail}
                 onFocus={onFocusMail}
                 className={"form__input"}
@@ -106,12 +112,13 @@ const Contact = () => {
               />
               <ValidMail email={email} focusedMail={focusedMail} />
             </div>
-            <div className={"textarea"}>
-              <h3>Wpisz swoja wiadomość</h3>
+            <div className={"textarea__box"}>
               <textarea
                 onChange={(e) => setMessage(e.target.value)}
                 onFocus={onFocusMessage}
                 onBlur={onBlurMessage}
+                className="textarea"
+                name={"message"}
                 value={message}
                 placeholder={
                   "Lorem ipsum dolor sit amet," +
@@ -123,12 +130,11 @@ const Contact = () => {
               />
               <ValidMessage message={message} focusedMessage={focusedMessage} />
             </div>
-            <button className={"send__button"} onClick={"submit"}>
-              SENT
-            </button>
+            <button className={"send__button"}>SENT</button>
           </form>
           <div className={"contact__options"}>
             <h3>michal.mardosz@gmail.com</h3>
+            <h3>+48 517 203 072</h3>
             <div className="social__logos">
               <a
                 href="https://www.messenger.com/t/100000079468151"

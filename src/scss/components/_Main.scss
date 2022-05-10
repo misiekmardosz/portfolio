@@ -1,4 +1,4 @@
-.main{
+.main {
   width: 100%;
   margin-top: 185px;
   display: flex;
@@ -9,25 +9,23 @@
   height: 500px;
   color: $side-text-color;
 }
-@media (max-width: $breakpoint-laptop){
-  .main{
+
+@media (max-width: $breakpoint-laptop) {
+  .main {
     background: url("../../../public/mainPhoto.jpeg") center/cover no-repeat;
-    //text-align: center;
-    padding: 0 50px;
     width: 100%;
     height: 100%;
-    //background: $main-color;
-    .title__container{
+
+    .title__container {
       padding: 50px;
-      text-shadow:
-              -1px -1px 0px white,
-              0px -1px 0px white,
-              1px -1px 0px white,
-              -1px  0px 0px white,
-              1px  0px 0px white,
-              -1px  1px 0px white,
-              0px  1px 0px white,
-              1px  1px 0px white;
+      text-shadow: -1px -1px 0px white,
+      0px -1px 0px white,
+      1px -1px 0px white,
+      -1px 0px 0px white,
+      1px 0px 0px white,
+      -1px 1px 0px white,
+      0px 1px 0px white,
+      1px 1px 0px white;
       backdrop-filter: blur(3px);
       width: 100%;
       height: 100%;
