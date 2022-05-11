@@ -81,6 +81,8 @@
           width: 100%;
           border: 1px solid $main-text-color;
           height: 150px;
+          -webkit-border-radius: 0;
+          border-radius: 0;
           font-family: $main-font-family;
           padding: 10px;
           color: black;
