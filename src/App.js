@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/portfolio" element={<Home />} />
           <Route path="/Drinks_Calculator" element={<DrinksCalculator />} />
           <Route path="/Car_Sharing" element={<CarSharing />} />
           <Route path="/Capital_City_Game" element={<CapitalCityGame />} />
