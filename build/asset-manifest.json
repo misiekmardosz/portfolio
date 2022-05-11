@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6914fd67.css",
+    "main.css": "/portfolio/static/css/main.4a9e0833.css",
     "main.js": "/portfolio/static/js/main.4797f905.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Lost_Game.png": "/portfolio/static/media/Lost_Game.84e082dc79c04f48e2d3.png",
@@ -35,12 +35,12 @@
     "static/media/trello-brands.svg": "/portfolio/static/media/trello-brands.be5dbff1ab7292f9216b61f3df7c6b7f.svg",
     "static/media/html5-brands.svg": "/portfolio/static/media/html5-brands.280fcec471ee0f3842bcb8ff7c9bbf23.svg",
     "static/media/css3-brands.svg": "/portfolio/static/media/css3-brands.25d1cad0688bb6a95e66592b95154bc9.svg",
-    "main.6914fd67.css.map": "/portfolio/static/css/main.6914fd67.css.map",
+    "main.4a9e0833.css.map": "/portfolio/static/css/main.4a9e0833.css.map",
     "main.4797f905.js.map": "/portfolio/static/js/main.4797f905.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6914fd67.css",
+    "static/css/main.4a9e0833.css",
     "static/js/main.4797f905.js"
   ]
 }
