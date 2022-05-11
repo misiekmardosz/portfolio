@@ -52,10 +52,10 @@ const DrinksCalculator = () => {
         </div>
         <h2 className="section__title">Screenshots</h2>
         <div className="project__photos">
-          <img src={addGlass} className="project__img" />
-          <img src={addRecipe} className="project__img" />
-          <img src={mainPage} className="project__img" />
-          <img src={recipeDetails} className="project__img" />
+          <img src={addGlass} className="project__img__vertical" />
+          <img src={addRecipe} className="project__img__vertical" />
+          <img src={mainPage} className="project__img__vertical" />
+          <img src={recipeDetails} className="project__img__vertical" />
         </div>
       </div>
       <Footer />

@@ -3,6 +3,7 @@
 import Home from "./components/Home";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import DrinksCalculator from "./components/projects/DrinksCalculator";
+import "./index.css";
 import "./scss/main.scss";
 import CapitalCityGame from "./components/projects/CapitalCityGame";
 import BestShop from "./components/projects/BestShop";
