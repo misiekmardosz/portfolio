@@ -16,31 +16,24 @@ const BestShop = () => {
           <div className="project__box">
             <h3 className="project__section__title">Technology Used</h3>
             <ul>
-              <li>React</li>
-              <li>React Modal</li>
-              <li>Bootstrap</li>
-              <li>JSON server</li>
               <li>HTML</li>
               <li>SCSS</li>
-              <li>JavaScript</li>
             </ul>
           </div>
           <div className="project__box">
             <h3 className="project__section__title">Description</h3>
             <article>
               <p>
-                This is a graduation project of CodersLab bootcamp.This is web
-                app for counting recipes for drinks based on glass size and
-                quantity, also you can save your recipes and glasses in
-                database. App is design for mobile only but also works on
-                desktop Design was invented by myself based on modern rules and
-                current trends
+                Full responsive web site created on Coders Lab Bootcamp
+                workshops, created by me to learn how to use scss and how to
+                build responsive layouts Best Shop was created in html and
+                styled in scss.
               </p>
             </article>
           </div>
           <div className="project__box">
             <h3 className="project__section__title">link to GitHub</h3>
-            <a href="https://github.com/misiekmardosz/DrinksCalculator">
+            <a href="https://github.com/misiekmardosz/BestShop">
               <img src={github_logo} alt="css_logo" className="brand__logo" />
             </a>
           </div>
