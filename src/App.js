@@ -11,7 +11,7 @@ import CarSharing from "./components/projects/CarSharing";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="portfolio">
         <Routes>
           <Route exact path="/portfolio" element={<Home />} />
           <Route path="/Drinks_Calculator" element={<DrinksCalculator />} />
