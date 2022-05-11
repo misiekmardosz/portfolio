@@ -1,23 +1,33 @@
-.technology{
+.technology {
   margin-top: $section-margin;
   display: flex;
   justify-content: left;
   flex-flow: wrap;
-  h2{
+  @media (max-width: $breakpoint-phone) {
+    margin: 0;
+  }
+
+  h2 {
     text-align: right;
     //padding: 0 40px;
     //border-bottom: 4px solid $main-text-color;
   }
-  .brands{
+
+  .brands {
     background: $main-color;
     padding: 40px 0;
     display: flex;
     justify-content: center;
     flex-flow: wrap;
-    .brand_logo{
+
+    .brand_logo {
       padding: 50px;
       width: 100px;
       height: 100px;
+      @media (max-width: $breakpoint-phone) {
+        width: 70px;
+        height: 70px;
+      }
     }
   }
 }

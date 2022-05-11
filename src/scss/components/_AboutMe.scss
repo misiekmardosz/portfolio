@@ -1,5 +1,8 @@
 .about__me {
   margin-top: $section-margin;
+  @media (max-width: $breakpoint-phone) {
+    margin: 0;
+  }
 
   .about__me__content {
     border: 2px solid $main-color;

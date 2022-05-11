@@ -1,5 +1,8 @@
 .portfolio {
   margin-top: $section-margin;
+  @media (max-width: $breakpoint-phone) {
+    margin: 0;
+  }
 
   .projects {
     display: flex;
@@ -53,11 +56,17 @@
 
     .projects__item:hover {
       transform: scale(1.1);
+      @media (max-width: $breakpoint-tablet) {
+        transform: none;
+      }
 
       .projects__item__content {
         backdrop-filter: blur(10px);
         box-shadow: 0px 0px 30px -1px $side-text-color;
-
+        @media (max-width: $breakpoint-phone) {
+          backdrop-filter: none;
+          box-shadow: none;
+        }
       }
 
       .project__title {
