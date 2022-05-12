@@ -139,6 +139,13 @@
   padding-left: 10px;
 }
 
+.message__sent {
+  bottom: -30px;
+  color: green !important;
+  font-size: 30px;
+  font-weight: 400;
+}
+
 .send__button {
   background: none;
   font-family: $main-font-family;

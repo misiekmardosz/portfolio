@@ -31,7 +31,7 @@ const ValidMail = ({ email, focusedMail }) => {
   else return <></>;
 };
 const ValidationGood = ({ goodValidation }) => {
-  return <h4 className={"message--sent input__valid"}>{goodValidation}</h4>;
+  return <h4 className={"message__sent input__valid"}>{goodValidation}</h4>;
 };
 
 export { ValidName, ValidSurname, ValidMessage, ValidationGood, ValidMail };

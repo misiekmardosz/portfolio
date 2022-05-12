@@ -3,7 +3,13 @@ import emailjs from "@emailjs/browser";
 import linkedin_logo from "../logos/linkedin-brands.svg";
 import messenger_logo from "../logos/facebook-messenger-brands.svg";
 import github_logo from "../logos/git-alt-brands.svg";
-import { ValidMail, ValidMessage, ValidName, ValidSurname } from "./Validation";
+import {
+  ValidationGood,
+  ValidMail,
+  ValidMessage,
+  ValidName,
+  ValidSurname,
+} from "./Validation";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -34,7 +40,7 @@ const Contact = () => {
       ) &&
       name.match(/^[A-Za-z]+$/) &&
       surname.match(/^[A-Za-z]+$/) &&
-      message.length < 100
+      message.length > 100
     ) {
       emailjs
         .sendForm(
@@ -52,17 +58,15 @@ const Contact = () => {
           }
         );
       e.target.reset();
-      setGoodValidation("send!");
+      setGoodValidation("sent!");
     }
   };
-  console.log(name);
-
+  console.log(goodValidation);
   return (
     <section id="Contact" title="Contact" className="contact">
       <div className="form__container container">
         <h2 className={"section__title"}>Contact</h2>
         <div className={"form__box"}>
-          {/*<ValidationGood goodValidation={goodValidation} />*/}
           <form ref={mailForm} className={"form"} onSubmit={sendEmail}>
             <div className={"inputs"}>
               <div className={"input"}>
@@ -128,6 +132,7 @@ const Contact = () => {
                 }
               />
               <ValidMessage message={message} focusedMessage={focusedMessage} />
+              <ValidationGood goodValidation={goodValidation} />
             </div>
             <button className={"send__button"}>SEND</button>
           </form>
