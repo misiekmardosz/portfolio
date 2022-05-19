@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.31b20847.css",
-    "main.js": "/portfolio/static/js/main.abbb5df9.js",
+    "main.js": "/portfolio/static/js/main.a42785ee.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Lost_Game.png": "/portfolio/static/media/Lost_Game.84e082dc79c04f48e2d3.png",
     "static/media/New_Best_Score.png": "/portfolio/static/media/New_Best_Score.6a7b48887dccb78bea38.png",
@@ -15,7 +15,6 @@
     "static/media/service.png": "/portfolio/static/media/service.30fbce0ce1383f054023.png",
     "static/media/BestShop.png": "/portfolio/static/media/BestShop.ea921fb916192fb15e2e.png",
     "static/media/numbers.png": "/portfolio/static/media/numbers.812eaff5707f1ebd414d.png",
-    "static/media/Negative0-26-26A(1).jpg": "/portfolio/static/media/Negative0-26-26A(1).025d9a65285588479b1c.jpg",
     "static/media/DrinksCalc.png": "/portfolio/static/media/DrinksCalc.ca3b76c027134b3af273.png",
     "static/media/pricing.png": "/portfolio/static/media/pricing.719c6677d60ffa5f1bad.png",
     "static/media/mainPhotoSmall.jpeg": "/portfolio/static/media/mainPhotoSmall.b732c307deb4d70d6361.jpeg",
@@ -26,6 +25,7 @@
     "static/media/mainPage.png": "/portfolio/static/media/mainPage.a71a8a8513d66951b44f.png",
     "static/media/Good_Answer.png": "/portfolio/static/media/Good_Answer.c2073363846aa5c668aa.png",
     "static/media/addRecipe.png": "/portfolio/static/media/addRecipe.5206e9303a8cb450f1eb.png",
+    "static/media/myPhoto.jpg": "/portfolio/static/media/myPhoto.0ee88261dfdc20321eaf.jpg",
     "static/media/sass-brands.svg": "/portfolio/static/media/sass-brands.7a29446e6967b6d7bfef7c414e5e29ad.svg",
     "static/media/react-brands.svg": "/portfolio/static/media/react-brands.b9ee6e1d0ee75ee94813aabb411b463d.svg",
     "static/media/js-brands.svg": "/portfolio/static/media/js-brands.849ab271da269656ee7d884b34d5ebce.svg",
@@ -37,11 +37,11 @@
     "static/media/html5-brands.svg": "/portfolio/static/media/html5-brands.280fcec471ee0f3842bcb8ff7c9bbf23.svg",
     "static/media/css3-brands.svg": "/portfolio/static/media/css3-brands.25d1cad0688bb6a95e66592b95154bc9.svg",
     "main.31b20847.css.map": "/portfolio/static/css/main.31b20847.css.map",
-    "main.abbb5df9.js.map": "/portfolio/static/js/main.abbb5df9.js.map",
+    "main.a42785ee.js.map": "/portfolio/static/js/main.a42785ee.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31b20847.css",
-    "static/js/main.abbb5df9.js"
+    "static/js/main.a42785ee.js"
   ]
 }
